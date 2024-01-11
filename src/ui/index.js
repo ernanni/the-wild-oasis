@@ -5,5 +5,6 @@ import Heading from './Heading';
 import Input from './Input';
 import Row from './Row';
 import Sidebar from './Sidebar';
+import Spinner from './Spinner';
 
-export { AppLayout, Button, Header, Heading, Input, Row, Sidebar };
+export { AppLayout, Button, Header, Heading, Input, Row, Sidebar, Spinner };
