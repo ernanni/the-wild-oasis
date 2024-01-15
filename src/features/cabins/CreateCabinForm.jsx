@@ -1,8 +1,9 @@
-import { Input, Form, Button, FileInput, FormRow, Textarea } from '../../ui';
-import { useForm } from 'react-hook-form';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { createCabin } from '../../services/apiCabins';
+import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
+
+import { Input, Form, Button, FileInput, FormRow, Textarea } from '../../ui';
+import { createCabin } from '../../services/apiCabins';
 
 function CreateCabinForm() {
   const { register, handleSubmit, reset, getValues, formState } = useForm();
