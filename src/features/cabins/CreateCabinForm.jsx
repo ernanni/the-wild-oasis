@@ -25,7 +25,7 @@ function CreateCabinForm() {
   }
 
   function onError(errors) {
-    console.log(errors);
+    console.error(errors);
   }
 
   return (
@@ -34,6 +34,7 @@ function CreateCabinForm() {
         <Input
           type="text"
           id="name"
+          disabled={isCreating}
           {...register('name', {
             required: 'Field Cabin name is required',
           })}
@@ -44,6 +45,7 @@ function CreateCabinForm() {
         <Input
           type="number"
           id="maxCapacity"
+          disabled={isCreating}
           {...register('maxCapacity', {
             required: 'Field Maximum capacity is required',
             min: {
@@ -58,6 +60,7 @@ function CreateCabinForm() {
         <Input
           type="number"
           id="regularPrice"
+          disabled={isCreating}
           {...register('regularPrice', {
             required: 'Field Regular price is required',
           })}
@@ -69,6 +72,7 @@ function CreateCabinForm() {
           type="number"
           id="discount"
           defaultValue={0}
+          disabled={isCreating}
           {...register('discount', {
             required: 'Field Discount is required',
             validate: (value) =>
@@ -86,6 +90,7 @@ function CreateCabinForm() {
           type="number"
           id="description"
           defaultValue=""
+          disabled={isCreating}
           {...register('description', {
             required: 'Field description is required',
           })}
