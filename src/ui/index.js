@@ -6,6 +6,7 @@ import FormRow from './FormRow';
 import Header from './Header';
 import Heading from './Heading';
 import Input from './Input';
+import Modal from './Modal';
 import Row from './Row';
 import Sidebar from './Sidebar';
 import Spinner from './Spinner';
@@ -20,6 +21,7 @@ export {
   Header,
   Heading,
   Input,
+  Modal,
   Row,
   Sidebar,
   Spinner,
