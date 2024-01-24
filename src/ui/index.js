@@ -11,6 +11,7 @@ import Modal from './Modal';
 import Row from './Row';
 import Sidebar from './Sidebar';
 import Spinner from './Spinner';
+import Table from './Table';
 import Textarea from './Textarea';
 
 export {
@@ -27,5 +28,6 @@ export {
   Row,
   Sidebar,
   Spinner,
+  Table,
   Textarea,
 };
