@@ -1,5 +1,6 @@
 import AppLayout from './AppLayout';
 import Button from './Button';
+import ConfirmDelete from './ConfirmDelete';
 import FileInput from './FileInput';
 import Form from './Form';
 import FormRow from './FormRow';
@@ -15,6 +16,7 @@ import Textarea from './Textarea';
 export {
   AppLayout,
   Button,
+  ConfirmDelete,
   Form,
   FileInput,
   FormRow,
