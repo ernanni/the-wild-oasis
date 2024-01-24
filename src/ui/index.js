@@ -7,6 +7,7 @@ import FormRow from './FormRow';
 import Header from './Header';
 import Heading from './Heading';
 import Input from './Input';
+import Menus from './Menus';
 import Modal from './Modal';
 import Row from './Row';
 import Sidebar from './Sidebar';
@@ -24,6 +25,7 @@ export {
   Header,
   Heading,
   Input,
+  Menus,
   Modal,
   Row,
   Sidebar,
