@@ -1,6 +1,7 @@
 import AppLayout from './AppLayout';
 import Button from './Button';
 import ConfirmDelete from './ConfirmDelete';
+import Empty from './Empty';
 import FileInput from './FileInput';
 import Filter from './Filter';
 import Form from './Form';
@@ -22,6 +23,7 @@ export {
   AppLayout,
   Button,
   ConfirmDelete,
+  Empty,
   Form,
   FileInput,
   Filter,
