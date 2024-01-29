@@ -2,6 +2,7 @@ import AppLayout from './AppLayout';
 import Button from './Button';
 import ConfirmDelete from './ConfirmDelete';
 import FileInput from './FileInput';
+import Filter from './Filter';
 import Form from './Form';
 import FormRow from './FormRow';
 import Header from './Header';
@@ -13,6 +14,7 @@ import Row from './Row';
 import Sidebar from './Sidebar';
 import Spinner from './Spinner';
 import Table from './Table';
+import TableOperations from './TableOperations';
 import Textarea from './Textarea';
 
 export {
@@ -21,6 +23,7 @@ export {
   ConfirmDelete,
   Form,
   FileInput,
+  Filter,
   FormRow,
   Header,
   Heading,
@@ -31,5 +34,6 @@ export {
   Sidebar,
   Spinner,
   Table,
+  TableOperations,
   Textarea,
 };
