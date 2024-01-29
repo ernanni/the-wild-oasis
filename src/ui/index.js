@@ -12,6 +12,7 @@ import Menus from './Menus';
 import Modal from './Modal';
 import Row from './Row';
 import Sidebar from './Sidebar';
+import SortBy from './SortBy';
 import Spinner from './Spinner';
 import Table from './Table';
 import TableOperations from './TableOperations';
@@ -32,6 +33,7 @@ export {
   Modal,
   Row,
   Sidebar,
+  SortBy,
   Spinner,
   Table,
   TableOperations,
