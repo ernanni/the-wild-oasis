@@ -1,12 +1,12 @@
 import { Heading, Row } from '../ui';
-import { BookingTable } from '../features/bookings';
+import { BookingTable, BookingTableOperations } from '../features/bookings';
 
 function Bookings() {
   return (
     <>
       <Row type="horizontal">
         <Heading as="h1">All bookings</Heading>
-        <p>TEST</p>
+        <BookingTableOperations />
       </Row>
       <BookingTable />
     </>
