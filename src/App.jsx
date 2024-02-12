@@ -1,11 +1,11 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { Toaster } from 'react-hot-toast';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { Toaster } from "react-hot-toast";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
-import GlobalStyles from './styles/GlobalStyles';
 import {
   Account,
+  Booking,
   Bookings,
   Cabins,
   Dashboard,
@@ -13,8 +13,9 @@ import {
   PageNotFound,
   Settings,
   Users,
-} from './pages';
-import { AppLayout } from './ui';
+} from "./pages";
+import GlobalStyles from "./styles/GlobalStyles";
+import { AppLayout } from "./ui";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -36,6 +37,7 @@ function App() {
             <Route index element={<Navigate replace to="dashboard" />} />
             <Route path="account" element={<Account />} />
             <Route path="bookings" element={<Bookings />} />
+            <Route path="booking/:bookingId" element={<Booking />} />
             <Route path="cabins" element={<Cabins />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="settings" element={<Settings />} />
@@ -48,7 +50,7 @@ function App() {
       <Toaster
         position="top-center"
         gutter={12}
-        containerStyle={{ margin: '8px' }}
+        containerStyle={{ margin: "8px" }}
         toastOptions={{
           success: {
             duration: 3000,
@@ -57,11 +59,11 @@ function App() {
             duration: 5000,
           },
           style: {
-            fontSize: '16px',
-            maxWidth: '500px',
-            padding: '16px 24px',
-            backgroundColor: 'var(--color-grey-0)',
-            color: 'var(--color-grey-700)',
+            fontSize: "16px",
+            maxWidth: "500px",
+            padding: "16px 24px",
+            backgroundColor: "var(--color-grey-0)",
+            color: "var(--color-grey-700)",
           },
         }}
       />
